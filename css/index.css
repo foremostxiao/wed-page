@@ -1,0 +1,472 @@
+/*通配选择器 *  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*!*  主 盒子 *!*/
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    /*设置透明度*/
+   /*rgba(245,245,245,0.98);*/
+}
+a{
+    text-decoration: none;
+}
+
+
+/*!*  顶部导航栏主框 ----star------  *!*/
+.topbar{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    background-color: black;
+
+}
+.topbar a{
+       color:#b0b0b0; /*字体颜色*/
+}
+
+.topbar a:hover{
+	/* 伪类选择器 hover鼠标悬停时超链接状态*/
+    color: white;
+}
+.topbar .sep{
+    color: #424242;
+    margin: 0 2px;
+}
+/*!*  *!*/
+.container1{
+    width: 1226px;
+    /*清楚浮动 不设置高度*/
+    overflow: hidden;
+    /*居中显示*/
+    margin: 0 auto;
+}
+.topbar-nav{
+    float: left;
+}
+.topbar-car,.topbar-info{
+    float: right;
+}
+
+/*.topar-cart .icon{*/
+	/*!*给购物车添加背景图片*!*/
+    /*!*在一个目录下 url(./bojie.jpg)*!*/
+    /*background: url("../imgs/icon-shop1.png") 3px 24px ;*/
+    /*width: 35px;*/
+    /*height: 22px;*/
+    /*!*加上display span (a span 可以设置宽高)*!*/
+    /*display: inline-block;*/
+    /*!*行内块元素 同时具有行内和和块级元素，和其他元素在一行，距离都可以设置*!*/
+    /*position: relative;*/
+    /*top:6px;*/
+
+/*}*/
+.icon{background: url("../imgs/icon-shop1.png") 3px 24px; width: 35px;
+    height: 22px;display: inline-block; position: relative;top:6px; }
+
+.topbar-car a{
+    display: block;
+    margin-left: 15px;
+    padding: 0 15px;
+}
+.topbar-car a:hover{
+    background-color: white;
+    color: rgba(255,103,0,0.98);
+}
+
+/*!*  顶部导航栏主框 ----end------  *!*/
+
+/* -------第二行导航栏-start------------*/
+/*设置 li 列表属性为空 * 声明中设置所有的列表属性。*/
+ul>li{
+	list-style: none;
+}
+
+.header{
+	height: 100px;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.container2{
+	width: 1226px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.header-logo,.header-nav{
+	float: left;
+	height: 100px;
+}
+
+.logo{
+	margin-right: 10px;
+	margin-top: 20px;
+}
+/*DIV ---header-search */
+.header-search{
+    float: right;
+    position: relative;
+}
+.header-nav ul li {
+    float: left;
+    margin: 0 auto;
+    padding: 0 8px;
+    color:  #000000;
+}
+.header-nav ul li a{ color: black; font-size: 16px;}
+.header-nav ul li a:hover{ color: red;}
+
+.search-text{ height: 48px; width: 223px; border: 1px solid #e0e0e0; margin-right: -1px;}
+.search-text:hover{ border: 1px solid #b0b0b0; }
+.search-text:focus{ outline:none; }
+.hot-words{ font-size: 12px;position: absolute;right: 62px; text-align: right;}
+
+.hot-words a{ background-color: #eee;color: #757575; padding: 1px 5px; position: relative;top: 2px;right: 16px;}
+.hot-words a:hover{ background-color: rgba(255,103,0,0.98); color: white;}
+
+.search-submit{height: 50px; width: 40px; background: url("../imgs/search1.png") no-repeat 3px 6px;
+    border: 1px solid #e0e0e0; position: relative;top: 20px; cursor: pointer; left: -5px;}
+.search-submit:hover{ background: url("../imgs/search2.png") no-repeat 8px 8px;
+    background-color: rgba(255,107,0,0.98);}
+
+/* -------第二行导航栏------------end------------*/
+
+/*---------第三行 列表内容栏-------start-----------*/
+/*.center-content{*/
+	/*width: 1226px;*/
+	/*line-height: 100px;*/
+	/*overflow: hidden;*/
+/*}*/
+
+/*---------------------up-content内容--start--------------------------*/
+/*定义.list-content */
+.center-content .up-content .list-content{ background-color: rgba(0,0,0,0.6);width: 240px;height: 465px; position: absolute;}
+.container3{
+	width: 1226px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+/*伪元素  这个元素的display设置为block或者inline-block，这样能设置宽高*/
+.list-content ul:before{ content: ""; height: 26px; display: block;}
+.list-content ul li{ padding: 10px 25px; }
+.list-content  ul li:hover{ background-color: #ff6700;}
+.list-content  ul li a{ color: white;}
+.list-content  ul li span{ float: right; color: white;}
+/*.photo-show{background: url("../imgs/center.jpg");width: 1226px;height: 465px;}*/
+/*---------------------up-content内容------end--------------------------*/
+
+/*---------------------down-content内容----start-------------------------*/
+.down-content{overflow: hidden;padding-top:10px ;}
+.down-content .down-1{width: 240px;overflow: hidden;background-color: #665e57;float: left;}
+.down-content ul{overflow: hidden;}
+.down-content .down-1 ul li{float: left;width: 78px;height: 83px;border: 1px solid #665e57;text-align: center;}
+.down-1 ul li a{color: #b0b0b0;position: relative;font-size: 15px;}
+.down-1 ul li a:hover{
+    color: white;
+}
+
+
+/*.down-l ul li span{ background: url("../imgs/icon-small1.png") no-repeat center; display: block;*/
+    /*position:relative; height: 32px; bottom: 6px; }*/
+
+.down-1 .p-1{
+    background: url("../imgs/a1.png") no-repeat center;
+    background-size: 29px; height: 30px;}
+
+.down-1 .p-2{
+    background: url("../imgs/a2.png") no-repeat center;
+    background-size: 29px; height: 30px;}
+
+.down-1 .p-3{
+    background: url("../imgs/a3.png") no-repeat center;
+     background-size: 29px; height: 30px;}
+
+.down-1 .p-4{
+    background: url("../imgs/a4.png") no-repeat center;
+     background-size: 29px; height: 30px;}
+
+.down-1 .p-5{
+    background: url("../imgs/a5.png") no-repeat center;
+     background-size: 29px; height: 30px;}
+
+.down-1 .p-6{
+    background: url("../imgs/a6.png") no-repeat center;
+     background-size: 29px; height: 30px;}
+
+/*盒子整体 right*/
+
+.down-content .down-2{
+	float: left;
+}
+
+.down-content .down-2 ul li{
+	float: left;
+}
+.down-2 img{
+    width: 315px;
+    height: 170px;
+    margin-left: 13px;
+}
+
+.down-2 img:hover{
+    box-shadow: 0 5px 1px #b0b0b0; /*box-shadow 向框添加一个或多个阴影*/
+}
+/*-------------down-content内容----end-----------*/
+
+/*---------第三行 列表内容栏-------end-----------*/
+
+/*------------------第四行闪购区域---start-------------------*/
+.container4{
+	width: 1226px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.flash-up{
+	height: 58px;
+	line-height: 58px;
+	font-size: 22px;
+	color: #333333;
+}
+
+.xiao-mi-flash{
+	float: left;
+	margin-top: 1px;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 58px;
+	color: #000000;
+}
+.flash-up .scroll-bar{
+	float: right;
+	margin-top: 1px;
+}
+
+.flash-down{
+	width: 1226px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.flash-down ul li{
+    float: left;
+    width: 234px;
+    margin-right: 11px;
+    color: #333;
+}
+
+/*.flash-down ul li a{*/
+    /*color: black;*/
+    /*font-size: 100%;*/
+/*}*/
+
+/*.flash-down ul li a:hover{*/
+    /*color: orange;*/
+/*}*/
+/*------------------第四行闪购区域---end----------------*/
+
+/*------------------第五部分 右侧固定导航栏---start------------*/
+.fixed-nav ul{
+    right: 0;
+    top: 300px;
+    position: fixed;
+    background-color: white;
+}
+.fixed-nav ul li{
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin: 5px;
+
+}
+.fixed-nav ul li:hover{
+    color: #757575;
+    cursor:pointer;
+}
+.fixed-nav ul li p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.fixed-nav .fixed-0{
+    background: url("../imgs/fixed-0.png") no-repeat center;
+    background-size: 30px;
+    height: 30px;
+}
+.fixed-nav .fixed-1{
+    background: url("../imgs/fixed-1.png") no-repeat center;
+    background-size: 30px;
+    height: 30px;
+}
+.fixed-nav .fixed-2{
+    background: url("../imgs/fixed-2.png") no-repeat center;
+    background-size: 30px;
+    height: 30px;
+}
+.fixed-nav .fixed-3{
+    background: url("../imgs/fixed-3.png") no-repeat center;
+    background-size: 30px;
+    height: 30px;
+}
+.fixed-nav .fixed-4{
+    background: url("../imgs/fixed-4.png") no-repeat center;
+    background-size: 30px;
+    height: 30px;
+}
+/*------------------第五部分 右侧固定导航栏---end----------*/
+
+/*------------------第六部分 售后服务----start-------------*/
+.after-sale{
+
+	overflow: hidden;
+	margin: 0 auto;
+}
+.after-sale .after-sale-up{
+    width: 1226px;
+    overflow: hidden;
+	margin: 0 auto;
+}
+.after-sale .after-sale-up ul{
+    padding-top: 30px;
+
+}
+
+
+.after-sale .after-sale-up ul li{
+    float: left;
+    padding-left: 40px;
+    text-align: center;
+}
+.after-sale .after-sale-up ul li p{
+    font-size: 20px;
+    float: right;
+}
+.after-sale .after-sale-up ul li span{
+    padding-left: 30px;
+}
+.after-sale-up .sale-up-1{
+    background: url("../imgs/after-sale-1.png") ;
+display:inline-block;background-size: 30px;width: 35px;
+    height: 30px;
+    float: left;
+
+
+}
+.after-sale-up .sale-up-2{
+    background: url("../imgs/after-sale-2.png") no-repeat center;
+    display:inline-block;background-size: 30px;width: 35px;
+    height: 25px;
+    float: left;
+
+}
+.after-sale-up .sale-up-3{
+    background: url("../imgs/after-sale-3.png") no-repeat center;
+    display:inline-block;background-size: 30px;width: 35px;
+    height: 26px;
+    float: left;
+
+}
+.after-sale-up .sale-up-4{
+    background: url("../imgs/after-sale-4.png") no-repeat center;
+    display:inline-block;background-size: 30px;width: 35px;
+    height: 30px;
+    float: left;
+
+
+}
+.after-sale-up .sale-up-5{
+    background: url("../imgs/after-sale-5.png") no-repeat center;
+    display:inline-block;background-size: 30px;width: 35px;
+    height: 30px;
+    float: left;
+}
+/*------------------第六部分 售后服务----end-------------*/
+
+/*-------------------列表选项--start----------------------------*/
+.after-sale-center ul{
+    float: left;
+    padding-left: 80px;
+}
+
+.after-sale-center ul li{
+    text-align: left;
+    padding-top: 10px;
+}
+
+.after-sale-center{
+    padding-top: 20px;
+    width: 1226px;
+    overflow: hidden;
+	margin: 0 auto;
+}
+.after-sale-center .li-a1,.li-a2,.li-a3,.li-a4,.li-a5,.li-a6{
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: black;
+}
+.after-sale-center .li-a7{
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+.after-sale-center .li-a7-1{
+    text-align: center;
+}
+.sale-phone{
+    background: url("../imgs/after-sale-server.png");
+    float: bottom;
+    display:inline-block;width: 130px;
+    height: 45px;
+    position: relative; left:23px;
+
+}
+/*---------------------page-bottom--start------------------*/
+.after-sale-down{
+    width: 100%;
+    background-color: #dcdada;
+}
+.page-bottom{
+    margin: 0 auto;
+    width: 1226px;
+    overflow: hidden;
+    padding-top: 40px;
+
+}
+.page-bottom-logo,.page-bottom-info-1,.page-bottom-info-2,.Pictures-of-qualification{
+    float: left;
+}
+
+.Pictures-of-qualification ul li{
+    float: left;
+    padding-left: 1px;
+
+}
+/*.pictures-of-qualification {*/
+    /*padding-left: 20px;*/
+/*}*/
+
+.page-bottom-info-1,.page-bottom-info-2{
+    padding-right: 70px;
+    text-align: left;
+    font-size: 8px;
+    margin: 0;
+    line-height: 18px
+}
+.page-bottom-info-1{
+    padding-top: 17px;
+}
+
+.after-sale-down p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Microsoft Yahei", "微软雅黑", "Arial", sans-serif;
+
+}
+/*--------------------------------*/
